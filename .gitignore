@@ -42,8 +42,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-## Gradle
-
 .gradle
 build/
 gradle/
@@ -58,7 +56,7 @@ BaseGameUtils/
 *.exe
 *.gwt
 *.gwt.xml
-*.jar
+
 *.bat
 *.iml
 *.so
