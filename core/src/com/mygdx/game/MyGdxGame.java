@@ -89,76 +89,6 @@ public class MyGdxGame implements ApplicationListener, InputProcessor
         drawShapes();
         isRand();
 	}
-    void isRand()
-    {
-        //Rainbow generator
-        if(shape.equals(rand))
-        {
-            if (red == 255 && green == 0)
-                blue += growth;
-            if (blue == 255 && green == 0)
-                red -= growth;
-            if (red == 0 && blue == 255)
-                green += growth;
-            if (green == 255 && red == 0)
-                blue -= growth;
-            if (blue == 0 && green == 255)
-                red += growth;
-            if (red == 255 && blue == 0)
-                green -= growth;
-            rand = new Color(red/255, green/255, blue/255, 0.15f);
-            shape = rand;
-        }
-    }
-    void createBalls(int amount)
-    {
-        // creating the location of the rotating reference points
-        for (int i=0; i < amount; i++)
-        {
-            balls[i]= new Ball();
-        }
-    }
-    void addTriangles(ArrayList<Ball> b_neighboors)
-    {
-        int s = b_neighboors.size();
-        if (s > 2)
-        {
-            for (int i = 1; i < s-1; i ++)
-            {
-                for (int j = i+1; j < s; j ++)
-                {
-                    triangles.add(new Triangle(b_neighboors.get(0).loc, b_neighboors.get(i).loc, b_neighboors.get(j).loc));
-                }
-            }
-        }
-    }
-    void drawShapes()
-    {
-        shapeRenderer.begin(ShapeRenderer.ShapeType.Line);
-        drawTriangles();
-        drawBalls();
-        shapeRenderer.end();
-        shapeRenderer.begin(ShapeRenderer.ShapeType.Filled);
-        drawTriangles();
-        drawBalls();
-        shapeRenderer.end();
-    }
-    void drawTriangles()
-    {
-        for (Triangle t : triangles)
-        {
-            t.draw();
-        }
-    }
-    void drawBalls()
-    {
-        for (Ball b : balls)
-        {
-            b.draw();
-        }
-    }
-
-
     @Override
     public void resize(int width, int height){}
     @Override
@@ -225,6 +155,75 @@ public class MyGdxGame implements ApplicationListener, InputProcessor
         {
             shapeRenderer.setColor(shape);
             shapeRenderer.triangle(A.x, A.y, B.x, B.y, C.x, C.y);
+        }
+    }
+
+    void isRand()
+    {
+        //Rainbow generator
+        if(shape.equals(rand))
+        {
+            if (red == 255 && green == 0)
+                blue += growth;
+            if (blue == 255 && green == 0)
+                red -= growth;
+            if (red == 0 && blue == 255)
+                green += growth;
+            if (green == 255 && red == 0)
+                blue -= growth;
+            if (blue == 0 && green == 255)
+                red += growth;
+            if (red == 255 && blue == 0)
+                green -= growth;
+            rand = new Color(red/255, green/255, blue/255, 0.15f);
+            shape = rand;
+        }
+    }
+    void createBalls(int amount)
+    {
+        // creating the location of the rotating reference points
+        for (int i=0; i < amount; i++)
+        {
+            balls[i]= new Ball();
+        }
+    }
+    void addTriangles(ArrayList<Ball> b_neighboors)
+    {
+        int s = b_neighboors.size();
+        if (s > 2)
+        {
+            for (int i = 1; i < s-1; i ++)
+            {
+                for (int j = i+1; j < s; j ++)
+                {
+                    triangles.add(new Triangle(b_neighboors.get(0).loc, b_neighboors.get(i).loc, b_neighboors.get(j).loc));
+                }
+            }
+        }
+    }
+    void drawShapes()
+    {
+        shapeRenderer.begin(ShapeRenderer.ShapeType.Line);
+        drawTriangles();
+        drawBalls();
+        shapeRenderer.end();
+        shapeRenderer.begin(ShapeRenderer.ShapeType.Filled);
+        drawTriangles();
+        drawBalls();
+        shapeRenderer.end();
+    }
+    void drawTriangles()
+    {
+        for (Triangle t : triangles)
+        {
+            t.draw();
+        }
+    }
+    void drawBalls()
+    {
+        for (Ball b : balls)
+        {
+            b.draw();
         }
     }
 
