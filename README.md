@@ -13,11 +13,7 @@ Rendering in alpha blend mode for nice effect when overlapping.
 
 ### Download
 
-* [Link to desktop version](https://github.com/kebapmanager/Triangles/tree/master/desktop/build/libs)
-
 * [Download desktop version] (https://www.dropbox.com/s/hojri2ms1zqzgmr/desktop-1.0.jar?dl=0)
-
-* [Link to android version](https://github.com/kebapmanager/Triangles/blob/master/android/build/apk/android-debug-unaligned.apk)
 
 * [Download android version](https://www.dropbox.com/s/f5cuhoyx8iuxhib/android-debug-unaligned.apk?dl=0)
 
