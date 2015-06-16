@@ -1,7 +1,11 @@
 # Triangles
 Triangles screensaver
+
 Generates circles that are moving along an ellipsoid path.
-Calculates distances of dots and if 3 are found in small proximity, generates triangle between them.
+
+Calculates distances of dots and if 3 are found in small proximity, generates triangle between them. 
+
+Rendering in alpha blend mode for nice effect when overlapping.
 
 # Download
 
