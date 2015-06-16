@@ -7,9 +7,11 @@ Calculates distances of dots and if 3 are found in small proximity, generates tr
 
 Rendering in alpha blend mode for nice effect when overlapping.
 
-# Download
+### See it in action
 
-[See it in action!](https://dl.dropboxusercontent.com/u/64175875/Triangles.webm)
+[WebM](https://dl.dropboxusercontent.com/u/64175875/Triangles.webm)
+
+### Download
 
 [Link to desktop version](https://github.com/kebapmanager/Triangles/tree/master/desktop/build/libs)
 
@@ -19,7 +21,7 @@ Rendering in alpha blend mode for nice effect when overlapping.
 
 [Download android version](https://www.dropbox.com/s/f5cuhoyx8iuxhib/android-debug-unaligned.apk?dl=0)
 
-# Instructions
+### Instructions
 
 touch/click - switch to next theme
 
