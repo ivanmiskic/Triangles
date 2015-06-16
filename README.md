@@ -1,5 +1,9 @@
 # Triangles
 Triangles screensaver
+Generates circles that are moving along an ellipsoid path.
+Calculates distances of dots and if 3 are found in small proximity, generates triangle between them.
+
+# Download
 
 [See it in action!](https://dl.dropboxusercontent.com/u/64175875/Triangles.webm)
 
@@ -10,3 +14,9 @@ Triangles screensaver
 [Link to android version](https://github.com/kebapmanager/Triangles/blob/master/android/build/apk/android-debug-unaligned.apk)
 
 [Download android version](https://www.dropbox.com/s/f5cuhoyx8iuxhib/android-debug-unaligned.apk?dl=0)
+
+# Instructions
+
+touch/click - switch to next theme
+
+drag/move mouse while pressing - restart the seed
