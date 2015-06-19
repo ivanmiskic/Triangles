@@ -7,8 +7,6 @@ Calculates distances of dots and if 3 are found in small proximity, generates tr
 
 Rendering in alpha blend mode for nice effect when overlapping.
 
-![alt tag](https://github.com/kebapmanager/Triangles/blob/master/Picture.png)
-
 ### See it in action
 
 * [WebM](https://dl.dropboxusercontent.com/u/64175875/Triangles.webm)
@@ -24,3 +22,6 @@ Rendering in alpha blend mode for nice effect when overlapping.
 touch/click - switch to next theme
 
 drag/move mouse while pressing - restart the seed
+
+### Preview
+![alt tag](https://github.com/kebapmanager/Triangles/blob/master/Picture%201.png)
